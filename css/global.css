@@ -33,29 +33,6 @@ body {
   font-weight: 400;
 }
 
-header {
-  padding: 12px 20px;
-  display: flex;
-  width: 100%;
-  gap: 12px;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-
-#btn-menu-usuario {
-  display: flex;
-  gap: 8px;
-  justify-content: space-between;
-  align-items: center;
-
-  svg {
-    width: fit-content;
-    height: 12px;
-    fill: currentcolor;
-  }
-}
-
 h1,
 .titulo-1 {
   font-size: 50px;
@@ -78,7 +55,7 @@ h1,
 }
 
 #menu-usuario {
- position: absolute;
+  position: absolute;
   right: 12px;
   top: 70px;
 
@@ -86,14 +63,14 @@ h1,
     padding: 12px;
     list-style: none;
   }
-  
+
   button {
     text-align: left;
     width: 100%;
     font-weight: 600;
     padding: 8px 20px;
     border-radius: 12px;
-    
+
     &:hover {
       transition: background 200ms ease-in-out, color 200ms ease-in-out;
       background: var(--acento-obscuro);
@@ -119,8 +96,7 @@ h1,
     border-radius: 999px;
   }
 
-  &.yappi-btn-grande {
-  }
+  &.yappi-btn-grande {}
 }
 
 .menu-flotante {

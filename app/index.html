@@ -8,29 +8,39 @@
   <title>Yappido!</title>
   <link rel="stylesheet" href="../css/global.css">
   <link rel="icon" type="image/x-icon" href="../public/yappi-logo.ico">
-  <style>
-    :root {
-      height: 100dvh;
-      --base: #fff0fc;
-      --acento: #fa4141;
-      /*   --acento: blue; */
-      --acento-obscuro: #b32b4d;
-      --color-texto: #231818;
-      --color-sec: #544d4d;
-      --color-sombra: 0deg 0% 0%;
-
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        inset: unset;
-      }
-    }
-  </style>
+ 
 </head>
 
 <body>
   <main>
-    <object data="../componentes/header.html"></object>
+
+
+    <header>
+      <div id="caja-logo">
+          <img src="../public/yappi-logo.svg" alt="Pedidos Yappido Logo" />
+      </div>
+      <button popovertarget="menu-usuario" id="btn-menu-usuario">
+          <div class="yappi-btn yappi-btn-redondo">NB</div>
+          <svg viewBox="0 0 448 512" width="100" title="chevron-down">
+              <path
+                  d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z" />
+          </svg>
+      </button>
+      <div id="menu-usuario" popover anchor="btn-menu-usuario" class="menu-flotante sombra-2">
+          <ul>
+              <li>
+                  <button link>
+                      Salir
+                  </button>
+              </li>
+              <li>
+                  <button>
+                      Configuración
+                  </button>
+              </li>
+          </ul>
+      </div>
+  </header>
 
   </main>
 </body>

@@ -1,6 +1,7 @@
 <head>
-    <link rel="stylesheet" href="../css/global.css">
     <style>
+        @import url(../css/global.css);
+
         body {
             display: contents;
         }
@@ -32,11 +33,7 @@
 
 <header>
     <div id="caja-logo">
-        <object data="../public/yappi-logo.svg">
-            <!-- Este es un mensaje de error genérico si no anda la object que solo se verá en ese caso -->
-            Your browser doesn’t support the object tag.
-        </object>
-
+        <img src="../public/yappi-logo.svg" alt="Pedidos Yappido Logo" />
     </div>
     <button popovertarget="menu-usuario" id="btn-menu-usuario">
         <div class="yappi-btn yappi-btn-redondo">NB</div>
@@ -48,7 +45,7 @@
     <div id="menu-usuario" popover anchor="btn-menu-usuario" class="menu-flotante sombra-2">
         <ul>
             <li>
-                <button>
+                <button link>
                     Salir
                 </button>
             </li>

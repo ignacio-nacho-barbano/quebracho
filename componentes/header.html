@@ -1,66 +1,62 @@
-<yp-header>
+<head>
+    <link rel="stylesheet" href="../css/global.css">
+    <style>
+        body {
+            display: contents;
+        }
 
-    <head>
-        <link rel="stylesheet" href="../css/global.css">
-        <style>
-            body {
-                display: contents;
+        header {
+            padding: 12px 20px;
+            display: flex;
+            width: 100%;
+            gap: 12px;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        #btn-menu-usuario {
+            display: flex;
+            gap: 8px;
+            justify-content: space-between;
+            align-items: center;
+
+            svg {
+                width: fit-content;
+                height: 12px;
+                fill: currentcolor;
             }
+        }
+    </style>
+</head>
 
-            header {
-                padding: 12px 20px;
-                display: flex;
-                width: 100%;
-                gap: 12px;
-                justify-content: space-between;
-                align-items: center;
-                position: relative;
-            }
+<header>
+    <div id="caja-logo">
+        <object data="../public/yappi-logo.svg">
+            <!-- Este es un mensaje de error genérico si no anda la object que solo se verá en ese caso -->
+            Your browser doesn’t support the object tag.
+        </object>
 
-            #btn-menu-usuario {
-                display: flex;
-                gap: 8px;
-                justify-content: space-between;
-                align-items: center;
-
-                svg {
-                    width: fit-content;
-                    height: 12px;
-                    fill: currentcolor;
-                }
-            }
-        </style>
-    </head>
-
-    <header>
-        <div id="caja-logo">
-            <object data="../public/yappi-logo.svg">
-                <!-- Este es un mensaje de error genérico si no anda la object que solo se verá en ese caso -->
-                Your browser doesn’t support the object tag.
-            </object>
-
-        </div>
-        <button popovertarget="menu-usuario" id="btn-menu-usuario">
-            <div class="yappi-btn yappi-btn-redondo">NB</div>
-            <svg viewBox="0 0 448 512" width="100" title="chevron-down">
-                <path
-                    d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z" />
-            </svg>
-        </button>
-        <div id="menu-usuario" popover anchor="btn-menu-usuario" class="menu-flotante sombra-2">
-            <ul>
-                <li>
-                    <button>
-                        Salir
-                    </button>
-                </li>
-                <li>
-                    <button>
-                        Configuración
-                    </button>
-                </li>
-            </ul>
-        </div>
-    </header>
-
-</yp-header>
+    </div>
+    <button popovertarget="menu-usuario" id="btn-menu-usuario">
+        <div class="yappi-btn yappi-btn-redondo">NB</div>
+        <svg viewBox="0 0 448 512" width="100" title="chevron-down">
+            <path
+                d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z" />
+        </svg>
+    </button>
+    <div id="menu-usuario" popover anchor="btn-menu-usuario" class="menu-flotante sombra-2">
+        <ul>
+            <li>
+                <button>
+                    Salir
+                </button>
+            </li>
+            <li>
+                <button>
+                    Configuración
+                </button>
+            </li>
+        </ul>
+    </div>
+</header>
